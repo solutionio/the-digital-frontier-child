@@ -2,7 +2,7 @@
 /**
  * Boutique Storefront extension compatibility
  *
- * @package boutique
+ * @package digitalfrontier
  */
 
 /**
@@ -12,4 +12,4 @@
 function boutique_extension_support() {
 	add_filter( 'storefront_designer_enabled', '__return_false' );
 }
-add_action( 'init', 'boutique_extension_support', -1 );
+add_action( 'init', 'digitalfrontier_extension_support', -1 );

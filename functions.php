@@ -1,6 +1,6 @@
 <?php
 /**
- * Boutique engine room
+ * digitalfrontier engine room
  *
  * @package storefront
  */

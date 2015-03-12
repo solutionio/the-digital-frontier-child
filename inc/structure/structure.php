@@ -1,20 +1,20 @@
 <?php
 /**
- * Boutique structural functions
+ * digitalfrontier structural functions
  *
- * @package boutique
+ * @package digitalfrontier
  */
 
 /**
  * Adjust the storefront homepage template layout
  * @return void
  */
-function boutique_homepage_layout() {
+function digitalfrontier_homepage_layout() {
 	remove_action( 'homepage', 'storefront_featured_products',		40 );
 	remove_action( 'homepage', 'storefront_homepage_content',		10 );
 
-	add_action( 'boutique_before_homepage_content', 'storefront_homepage_content',			10 );
-	add_action( 'boutique_before_homepage_content', 'storefront_featured_products',			20 );
+	add_action( 'digitalfrontier_before_homepage_content', 'storefront_homepage_content',			10 );
+	add_action( 'digitalfrontier_before_homepage_content', 'storefront_featured_products',			20 );
 
 	remove_action( 'homepage', 'storefront_product_categories',	20 );
 }
@@ -23,15 +23,15 @@ function boutique_homepage_layout() {
  * Primary navigation wrapper
  * @return void
  */
-function boutique_primary_navigation_wrapper() {
-	echo '<section class="boutique-primary-navigation">';
+function digitalfrontier_primary_navigation_wrapper() {
+	echo '<section class="digitalfrontier-primary-navigation">';
 }
 
 /**
  * Primary navigation wrapper close
  * @return void
  */
-function boutique_primary_navigation_wrapper_close() {
+function digitalfrontier_primary_navigation_wrapper_close() {
 	echo '</section>';
 }
 
@@ -40,7 +40,7 @@ function boutique_primary_navigation_wrapper_close() {
  * @param  array $args args passed to the filter
  * @return array       the modified args
  */
-function boutique_product_columns_three( $args ) {
+function digitalfrontier_product_columns_three( $args ) {
 	$args['limit'] 		= 3;
 	$args['columns'] 	= 3;
 

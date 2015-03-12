@@ -1,6 +1,6 @@
 <?php
 /**
- * Customises the stock Storefront homepage template to include the sidebar and the boutique_before_homepage_content hook.
+ * Customises the stock Storefront homepage template to include the sidebar and the digitalfrontier_before_homepage_content hook.
  *
  * Template name: Homepage
  *
@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div class="boutique-featured-products site-main">
-		<?php do_action( 'boutique_before_homepage_content' ); ?>
+	<div class="digitalfrontier-featured-products site-main">
+		<?php do_action( 'digitalfrontier_before_homepage_content' ); ?>
 	</div>
 
 	<div id="primary" class="content-area">
