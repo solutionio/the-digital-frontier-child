@@ -1,4 +1,4 @@
-# Boutique Changelog
+# Changelog
 
-### *2015.01.20* - 1.0.0
+### *2015.03.12* - 0.0.1
 * Initial release!
